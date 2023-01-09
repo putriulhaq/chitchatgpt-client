@@ -8,7 +8,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch('https://chitchat-gpt.vercel.app/translate',{ 
+    fetch('http://localhost:8000/translate',{ 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
