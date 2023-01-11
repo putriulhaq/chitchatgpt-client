@@ -1,4 +1,9 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
+import Navbar from '../component/Navbar'
+import Footer from '../component/Footer'
+// import Banner from '../component/Banner'
+import { Container } from 'react-bootstrap'
+import "../style/translate.css"
 
 const Translate = () => {
     const [message, setMessage] = useState('')
@@ -28,23 +33,36 @@ const Translate = () => {
         }
     };
 
-    return (<><h1>You can say anything and I'll translate</h1>
-        <h3>Indonesia to English only</h3>
-        <form onSubmit={handleSubmit}>
-            <textarea
-                className="input-translate"
-                value={message}
-                placeholder='Drop your sentence, i will translate'
-                onKeyDown={handleEnter}
-                onChange={(e) => setMessage(e.target.value)}></textarea>
-
-            <div className="button">
-                <button type="submit" className="submit">Submit</button>
-                <input type="button" value="Reset Form" className="reset" onClick={resetForm} />
+    return (<>
+        <Navbar />
+        <div className='banner-area two'>
+            <div className="d-table-cell">
+                <Container fluid>
+                    <div className='bann-content'>
+                        <h1 className="title-banner">You can say anything and I'll translate</h1>
+                        <span className="title-banner-rule">Indonesia to English only</span>
+                    </div>
+                </Container>
             </div>
-        </form>
+        </div>
+        <Container>
+            <form onSubmit={handleSubmit}>
+                <textarea
+                    className="input-translate"
+                    value={message}
+                    placeholder='Drop your sentence, i will translate'
+                    onKeyDown={handleEnter}
+                    onChange={(e) => setMessage(e.target.value)}></textarea>
 
-        <div className="answer">{response}</div>
+                <div className="button">
+                    <button type="submit" className="submit">Submit</button>
+                    <input type="button" value="Reset Form" className="reset" onClick={resetForm} />
+                </div>
+            </form>
+
+            <div className="answer">{response}</div>
+        </Container>
+        <Footer />
     </>)
 }
 

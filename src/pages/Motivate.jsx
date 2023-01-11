@@ -1,4 +1,9 @@
 import { React, useState } from 'react'
+import Navbar from '../component/Navbar'
+import Footer from '../component/Footer'
+import Banner from '../component/Banner'
+import { Container } from 'react-bootstrap'
+import "../style/translate.css"
 
 
 const Motivate = () => {
@@ -30,19 +35,33 @@ const Motivate = () => {
     };
 
     return (
-        <><h1>Express your feelings, I'll give you motivation.</h1>
-            <form onSubmit={handleSubmit}>
-                <textarea className="input-translate"
-                    value={message}
-                    placeholder='What are you feeling?'
-                    onKeyDown={handleEnter}
-                    onChange={(e) => setMessage(e.target.value)}></textarea>
-                <div className="button">
-                    <button type="submit" className="submit">Submit</button>
-                    <input type="button" value="Reset Form" className="reset" onClick={resetForm} />
+        <>
+            <Navbar />
+            <div className='banner-area two'>
+                <div className="d-table-cell">
+                    <Container fluid>
+                        <div className='bann-content'>
+                            <h1 className="title-banner">Express your feelings, I'll give you motivation.</h1>
+                        </div>
+                    </Container>
                 </div>
-            </form>
-            <div className="answer">{response}</div>
+            </div>
+            <Container>
+                <h1></h1>
+                <form onSubmit={handleSubmit}>
+                    <textarea className="input-translate"
+                        value={message}
+                        placeholder='What are you feeling?'
+                        onKeyDown={handleEnter}
+                        onChange={(e) => setMessage(e.target.value)}></textarea>
+                    <div className="button">
+                        <button type="submit" className="submit">Submit</button>
+                        <input type="button" value="Reset Form" className="reset" onClick={resetForm} />
+                    </div>
+                </form>
+                <div className="answer">{response}</div>
+            </Container>
+            <Footer />
         </>
     )
 }

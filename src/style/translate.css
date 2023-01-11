@@ -55,6 +55,7 @@
 }
 
 .input-translate {
+    margin-top: 50px;
     display: block;
     width: 50%;
     height: 200px;
@@ -85,4 +86,15 @@
     resize: vertical;
     margin-left: 25%;
     text-align: left;
+}
+
+.title-banner{
+    display: block;
+    margin: 15% 64%;
+    width: 100%;
+}
+
+.title-banner-rule{
+    margin-left: 65%;
+    width: 100%;
 }

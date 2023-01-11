@@ -1,0 +1,12 @@
+.answer {
+    margin-bottom: 100px;
+}
+.main-nav{
+    align-items: center;
+    background-color: blue;
+}
+.center-navbar {
+    width:30%;
+    margin-left: 35%;
+    align-items: center;
+  }

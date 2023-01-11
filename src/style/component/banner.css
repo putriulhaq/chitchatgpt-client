@@ -1,0 +1,73 @@
+.banner-area.two .banner-content {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    max-width: 745px;
+}
+
+.banner-area {
+    height: 500px;
+
+}
+
+.banner-area.two .banner-content span {
+    color: #fff;
+}
+
+.banner-area.two .banner-content h1 {
+    color: #fff;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.banner-area.two .banner-content p {
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.banner-area.two .banner-content .cmn-btn {
+    color: #2948ff;
+    background-color: #fff;
+}
+
+.banner-area.two .banner-content .cmn-btn:hover {
+    color: #fff;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.d-table-cell {
+    vertical-align: middle;
+}
+
+.bann-content {
+    max-width: 825px;
+}
+
+.bann-content span {
+    display: block;
+    color: #252525;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bann-content h1 {
+    color: #252525;
+    font-size: 80px;
+    margin-bottom: 10px;
+    line-height: 100px;
+}
+
+.bann-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.banner-area{
+    background-image: url("../../asset/back.jpg");
+    background-color: beige;
+ 
+  }
