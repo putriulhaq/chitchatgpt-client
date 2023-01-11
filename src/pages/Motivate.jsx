@@ -12,7 +12,7 @@ const Motivate = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch('http://localhost:8000/api/motivate', {
+        fetch('https://chitchatgpt-server.vercel.app/api/motivate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
