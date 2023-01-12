@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const CompCard = () => {
     return (
-        <section class="text-gray-800 background-radial-gradient ">
+        <section class="text-gray-800 background-radial-gradient " id="service">
             <div class="bg-[#FAF7ED] px-6 py-12 md:px-12 lg:text-left h-128">
                 <div class="container mx-auto">
                     <div class="grid lg:grid-cols-3 gap-12 flex items-center">
